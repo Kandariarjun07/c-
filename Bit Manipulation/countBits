@@ -1,13 +1,15 @@
-// Cpp program to count number of '1' bit in a number in it's binary form
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main() {
+int main()
+{
     int n, count = 0;
     cout << "enter the number : ";
     cin >> n;
     int n1 = n;
-    while (n != 0) {
-        if (n & 1) {
+    while (n != 0)
+    {
+        if (n & 1)
+        {
             count++;
         }
         n = n >> 1;
