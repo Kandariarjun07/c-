@@ -1,32 +1,45 @@
 #include <iostream>
 using namespace std;
-class fruits{
+class fruits
+{
     int f;
-    public:
-    fruits(int t){
+
+public:
+    fruits(int t)
+    {
         f = t;
         cout << "Total fruits are : " << t << endl;
     }
 };
-class apple:public fruits{
+class apple : public fruits
+{
     int a;
-    public:
-    apple(int m,int a) : fruits(m+a)
+
+public:
+    apple(int m, int a) : fruits(m + a)
     {
         this->a = a;
         cout << "Total apple are : " << a << endl;
     }
 };
-class mango:public apple{
+class mango : public apple
+{
     int m;
-    public:
-    mango(int m,int a) : apple(m,a){
+
+public:
+    mango(int m, int a) : apple(m, a)
+    {
         this->m = m;
         cout << "Total mangoes are : " << m << endl;
     }
 };
 int main()
 {
-    mango m1(4, 5);
+    int m, a;
+    cout << "Enter number of mangoes :";
+    cin >> m;
+    cout << "Enter number of apples :";
+    cin >> a;
+    mango m1(m, a);
     return 0;
 }
