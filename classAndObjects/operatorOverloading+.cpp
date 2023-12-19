@@ -27,9 +27,9 @@ int main()
 {
     Student m1("Arjun");
     Student m2("kandari");
-    // Student m3 = m1 + m2;
-    // m3.display();
-    string a = "Arjun";
-    string b = "Kandari";
-    cout << a + b;
+    Student m3 = m1 + m2;
+    m3.display();
+    // string a = "Arjun";
+    // string b = "Kandari";
+    // cout << a + b;
 }

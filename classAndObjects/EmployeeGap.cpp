@@ -16,12 +16,13 @@ public:
     }
     int operator-(Employee e)
     {
+        
         return abs(age - e.age);
     }
 };
 int main()
 {
     Employee e1("Arjun", 20, "E101"), e2("Hemu", 19, "E102");
-    cout << "Age gap is " << e2 - e1;
+    cout << "Age gap is " << e1 - e2;
     return 0;
 }

@@ -14,7 +14,7 @@ public:
     {
         cout << str;
     }
-    friend string operator+(Student &, int num);
+    friend string operator+(Student &, int);
 };
 string operator+(Student &s, int num)
 {

@@ -35,8 +35,8 @@ int main()
 {
     Student m1(5);
     m1.display();
-    ++m1;
+    (++m1).display();
     m1.display();
-    m1++;
+    m1++.display();
     m1.display();
 }
